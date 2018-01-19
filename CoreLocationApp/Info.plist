@@ -22,6 +22,8 @@
 	<true/>
 	<key>NSCameraUsageDescription</key>
 	<string>For documentation of your accident</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Record My Accident</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>For documentation of your accident</string>
 	<key>UILaunchStoryboardName</key>
