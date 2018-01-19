@@ -9,69 +9,92 @@
 import Foundation
 import AVFoundation
 import UIKit
+import ImagePicker
 
-class Camera1ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
+class Camera1ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, ImagePickerDelegate{
+
+ 
     @IBOutlet weak var imageView: UIImageView!
-    @IBAction func takePicture(_sender: Any){
-        
-        let imagePickerController = UIImagePickerController()
-        
-        let  actionSheet = UIAlertController(title: "Photo Source", message: "Choose a source", preferredStyle: . actionSheet)
-        
-        
-        //activates camera
-        actionSheet.addAction(UIAlertAction(title: "Camera", style: .default, handler: { (action:UIAlertAction) in
-            
-            if UIImagePickerController.isSourceTypeAvailable(.camera) {
-                imagePickerController.sourceType = .camera
-                print("camera is activated")
-                self.present(imagePickerController, animated: true, completion: nil)
-            }else{
-                print("camera is down")
-            }
-        }))
-        //activates photo library
-        actionSheet.addAction(UIAlertAction(title: "Photo Library", style: .default, handler: { (action:UIAlertAction) in imagePickerController.sourceType = .photoLibrary
-            print("photo library is available")
-                self.present(imagePickerController, animated: true, completion: nil)
-            }))
-        
-        
-        //allows user to select cancel
-        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-            self.present(actionSheet, animated: true, completion: nil)
-        }
-        
-        //allows
-        func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-            //image object...use the
-            print("about to save image!")
-            let image = info[UIImagePickerControllerOriginalImage] as! UIImage
-            
-            imageView.image = image
-            print ("i have the photo now")
-            picker.dismiss(animated: true, completion: nil)
-        }
-        
-        func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-            picker.dismiss(animated: true, completion: nil)
-    }
-
-        override func viewDidLoad() {
-            super.viewDidLoad()
-
-    // Do any additional setup after loading the view.
-        }
-
-        override func didReceiveMemoryWarning() {
-            super.didReceiveMemoryWarning()
-
-
-        // Dispose of any resources that can be recreated.
-            }
     
+    @IBOutlet weak var imageView2: UIImageView!
+    
+    lazy var button: UIButton = self.makeButton()
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = UIColor.white
+        view.addSubview(button)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        
+        view.addConstraint(
+            NSLayoutConstraint(item: button, attribute: .centerX,
+                               relatedBy: .equal, toItem: view,
+                               attribute: .centerX, multiplier: 1,
+                               constant: 0))
+        
+        view.addConstraint(
+            NSLayoutConstraint(item: button, attribute: .centerY,
+                               relatedBy: .equal, toItem: view,
+                               attribute: .centerY, multiplier: 1,
+                               constant: 0))
     }
+    
+    func makeButton() -> UIButton {
+        let button = UIButton()
+        button.setTitle("TAKE A PICTURE OF THE OTHER CAR.", for: .normal)
+        button.setTitleColor(UIColor.black, for: .normal)
+        button.addTarget(self, action: #selector(buttonTouched(button:)), for: .touchUpInside)
+        
+        return button
+    }
+    
+@objc func buttonTouched(button: UIButton) {
+        var config = Configuration()
+        config.doneButtonTitle = "Finish"
+        config.noImagesTitle = "Sorry! There are no images here!"
+        config.recordLocation = false
+        config.allowVideoSelection = true
+        
+        let imagePicker = ImagePickerController(configuration: config)
+        imagePicker.delegate = self
+        
+        present(imagePicker, animated: true, completion: nil)
+    }
+    
+    // MARK: - ImagePickerDelegate
+    func cancelButtonDidPress(_ imagePicker: ImagePickerController) {
+        imagePicker.dismiss(animated: true, completion: nil)
+    }
+    
+    func wrapperDidPress(_ imagePicker: ImagePickerController, images: [UIImage]) {
+        guard images.count > 0 else { return }
+    }
+    
+    func doneButtonDidPress(_ imagePicker: ImagePickerController, images: [UIImage]) {
+        print("displaying images")
+        
+        imageView.image=images[0]
+        imageView2.image=images[1]
 
+        
+        imagePicker.dismiss(animated: true, completion: nil)
+    }
+}
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 

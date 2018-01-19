@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36E9413C4F622A00188C51D1 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		4695A1E020116EF500A55BE1 /* Camera1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4695A1DF20116EF500A55BE1 /* Camera1ViewController.swift */; };
 		50B1009C2011542C00409446 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B1009B2011542C00409446 /* AppDelegate.swift */; };
 		50B1009E2011542C00409446 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B1009D2011542C00409446 /* ViewController.swift */; };
@@ -16,7 +17,10 @@
 		50B100A92011542C00409446 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50B100A72011542C00409446 /* LaunchScreen.storyboard */; };
 		50B100B42011542C00409446 /* CoreLocationAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B100B32011542C00409446 /* CoreLocationAppUITests.swift */; };
 		50B100BF2011616F00409446 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B100BE2011616F00409446 /* LocationViewController.swift */; };
+		50B100F02011CAB400409446 /* Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B100EF2011CAB400409446 /* Pin.swift */; };
 		AB72C37E20117705003ED9F1 /* DriversInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB72C37D20117705003ED9F1 /* DriversInfoViewController.swift */; };
+		B27E75F60E25CCF6C3E4EE43 /* Pods_CoreLocationApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3CD29C26115DB56B70903F /* Pods_CoreLocationApp.framework */; };
+		F2236C7CA116BD7A75CBAFB5 /* Pods_CoreLocationAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46638DFAD71112B6EA79EAB9 /* Pods_CoreLocationAppUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +34,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A3CD29C26115DB56B70903F /* Pods_CoreLocationApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreLocationApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1369F70A12B61CA3798332D4 /* Pods-CoreLocationAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreLocationAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoreLocationAppUITests/Pods-CoreLocationAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3535A1DA9244ABF0B885F860 /* Pods-CoreLocationAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreLocationAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoreLocationAppUITests/Pods-CoreLocationAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		46638DFAD71112B6EA79EAB9 /* Pods_CoreLocationAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreLocationAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		468FEBEB2011CC160074DD7B /* CoreLocationApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreLocationApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		4695A1DF20116EF500A55BE1 /* Camera1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera1ViewController.swift; sourceTree = "<group>"; };
 		50B100982011542C00409446 /* CoreLocationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreLocationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B1009B2011542C00409446 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,7 +52,9 @@
 		50B100B32011542C00409446 /* CoreLocationAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocationAppUITests.swift; sourceTree = "<group>"; };
 		50B100B52011542C00409446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50B100BE2011616F00409446 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		50B100EF2011CAB400409446 /* Pin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pin.swift; sourceTree = "<group>"; };
 		AB72C37D20117705003ED9F1 /* DriversInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriversInfoViewController.swift; sourceTree = "<group>"; };
+		C4C5D53C5C3076DBBE05F2EE /* Pods-CoreLocationApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreLocationApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoreLocationApp/Pods-CoreLocationApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36E9413C4F622A00188C51D1 /* (null) in Frameworks */,
+				B27E75F60E25CCF6C3E4EE43 /* Pods_CoreLocationApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,18 +71,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2236C7CA116BD7A75CBAFB5 /* Pods_CoreLocationAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4BEA0370B055BC2D934078AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A3CD29C26115DB56B70903F /* Pods_CoreLocationApp.framework */,
+				46638DFAD71112B6EA79EAB9 /* Pods_CoreLocationAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		50B1008F2011542C00409446 = {
 			isa = PBXGroup;
 			children = (
 				50B1009A2011542C00409446 /* CoreLocationApp */,
 				50B100B22011542C00409446 /* CoreLocationAppUITests */,
 				50B100992011542C00409446 /* Products */,
+				80CF2D569C134565164FD8B2 /* Pods */,
+				4BEA0370B055BC2D934078AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,10 +116,12 @@
 				50B100BE2011616F00409446 /* LocationViewController.swift */,
 				50B1009F2011542C00409446 /* Main.storyboard */,
 				4695A1DF20116EF500A55BE1 /* Camera1ViewController.swift */,
+				50B100EF2011CAB400409446 /* Pin.swift */,
 				50B100A52011542C00409446 /* Assets.xcassets */,
 				50B100A72011542C00409446 /* LaunchScreen.storyboard */,
 				50B100AA2011542C00409446 /* Info.plist */,
 				50B100A22011542C00409446 /* CoreLocationApp.xcdatamodeld */,
+				468FEBEB2011CC160074DD7B /* CoreLocationApp-Bridging-Header.h */,
 			);
 			path = CoreLocationApp;
 			sourceTree = "<group>";
@@ -108,6 +135,16 @@
 			path = CoreLocationAppUITests;
 			sourceTree = "<group>";
 		};
+		80CF2D569C134565164FD8B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3535A1DA9244ABF0B885F860 /* Pods-CoreLocationAppUITests.release.xcconfig */,
+				C4C5D53C5C3076DBBE05F2EE /* Pods-CoreLocationApp.debug.xcconfig */,
+				1369F70A12B61CA3798332D4 /* Pods-CoreLocationAppUITests.debug.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -115,9 +152,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50B100B82011542C00409446 /* Build configuration list for PBXNativeTarget "CoreLocationApp" */;
 			buildPhases = (
+				46CE83BF61BA8A923ED47751 /* [CP] Check Pods Manifest.lock */,
 				50B100942011542C00409446 /* Sources */,
 				50B100952011542C00409446 /* Frameworks */,
 				50B100962011542C00409446 /* Resources */,
+				7E9385CD5A5E820E128D80A9 /* [CP] Embed Pods Frameworks */,
+				6F6A709948DE4519CFE9FE10 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50B100BB2011542C00409446 /* Build configuration list for PBXNativeTarget "CoreLocationAppUITests" */;
 			buildPhases = (
+				9585C31CCD8F97145EE55F4B /* [CP] Check Pods Manifest.lock */,
 				50B100AB2011542C00409446 /* Sources */,
 				50B100AC2011542C00409446 /* Frameworks */,
 				50B100AD2011542C00409446 /* Resources */,
+				DEB1557BDC483D51BD663224 /* [CP] Embed Pods Frameworks */,
+				8CBAC4E5332ED3751DB2D949 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -158,6 +201,7 @@
 				TargetAttributes = {
 					50B100972011542C00409446 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					50B100AE2011542C00409446 = {
@@ -206,6 +250,108 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		46CE83BF61BA8A923ED47751 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoreLocationApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F6A709948DE4519CFE9FE10 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoreLocationApp/Pods-CoreLocationApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E9385CD5A5E820E128D80A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CoreLocationApp/Pods-CoreLocationApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ImagePicker/ImagePicker.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImagePicker.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoreLocationApp/Pods-CoreLocationApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CBAC4E5332ED3751DB2D949 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoreLocationAppUITests/Pods-CoreLocationAppUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9585C31CCD8F97145EE55F4B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoreLocationAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEB1557BDC483D51BD663224 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoreLocationAppUITests/Pods-CoreLocationAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		50B100942011542C00409446 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -215,6 +361,7 @@
 				50B1009E2011542C00409446 /* ViewController.swift in Sources */,
 				4695A1E020116EF500A55BE1 /* Camera1ViewController.swift in Sources */,
 				50B100A42011542C00409446 /* CoreLocationApp.xcdatamodeld in Sources */,
+				50B100F02011CAB400409446 /* Pin.swift in Sources */,
 				50B1009C2011542C00409446 /* AppDelegate.swift in Sources */,
 				50B100BF2011616F00409446 /* LocationViewController.swift in Sources */,
 			);
@@ -367,14 +514,18 @@
 		};
 		50B100B92011542C00409446 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4C5D53C5C3076DBBE05F2EE /* Pods-CoreLocationApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8KXZDGT6E4;
 				INFOPLIST_FILE = CoreLocationApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Self.CoreLocationApp2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CoreLocationApp/CoreLocationApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -384,12 +535,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8KXZDGT6E4;
 				INFOPLIST_FILE = CoreLocationApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Self.CoreLocationApp2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CoreLocationApp/CoreLocationApp-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -397,6 +550,7 @@
 		};
 		50B100BC2011542C00409446 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1369F70A12B61CA3798332D4 /* Pods-CoreLocationAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -412,6 +566,7 @@
 		};
 		50B100BD2011542C00409446 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3535A1DA9244ABF0B885F860 /* Pods-CoreLocationAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

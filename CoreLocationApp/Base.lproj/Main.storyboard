@@ -18,45 +18,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kUU-PB-I6j">
-                                <rect key="frame" x="0.0" y="10" width="414" height="284"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kUU-PB-I6j">
+                                <rect key="frame" x="0.0" y="64" width="414" height="254"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="284" id="QIM-98-d46"/>
+                                    <constraint firstAttribute="height" constant="254" id="18d-ov-ldc"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DbV-ZL-m4X">
-                                <rect key="frame" x="172.66666666666666" y="665" width="69" height="30"/>
-                                <state key="normal" title="Car Photo"/>
-                                <connections>
-                                    <action selector="takePictureWith_sender:" destination="o3s-M5-E11" eventType="touchUpInside" id="FPN-iw-YrA"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Rj-6c-W1b">
-                                <rect key="frame" x="142" y="476" width="90" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Import photo"/>
-                                <connections>
-                                    <action selector="importImage:" destination="o3s-M5-E11" eventType="touchUpInside" id="G4J-zd-hIF"/>
-                                </connections>
-                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="llF-da-DfO">
+                                <rect key="frame" x="0.0" y="457" width="414" height="279"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="279" id="bxa-Vj-1r6"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="kUU-PB-I6j" firstAttribute="top" secondItem="A4E-e0-Qkq" secondAttribute="top" constant="10" id="Fx6-jN-DJv"/>
-                            <constraint firstItem="xQ6-lp-5Ew" firstAttribute="bottom" secondItem="DbV-ZL-m4X" secondAttribute="bottom" constant="41" id="Kd5-k6-GZM"/>
-                            <constraint firstItem="kUU-PB-I6j" firstAttribute="leading" secondItem="xQ6-lp-5Ew" secondAttribute="leading" id="Zoa-9k-MnS"/>
-                            <constraint firstItem="kUU-PB-I6j" firstAttribute="trailing" secondItem="xQ6-lp-5Ew" secondAttribute="trailing" id="jHK-EO-hzu"/>
-                            <constraint firstItem="DbV-ZL-m4X" firstAttribute="centerX" secondItem="A4E-e0-Qkq" secondAttribute="centerX" id="o6F-PJ-adY"/>
+                            <constraint firstItem="llF-da-DfO" firstAttribute="leading" secondItem="xQ6-lp-5Ew" secondAttribute="leading" id="FGe-NG-lgL"/>
+                            <constraint firstItem="llF-da-DfO" firstAttribute="bottom" secondItem="xQ6-lp-5Ew" secondAttribute="bottom" id="VCa-6N-zoJ"/>
+                            <constraint firstItem="llF-da-DfO" firstAttribute="trailing" secondItem="xQ6-lp-5Ew" secondAttribute="trailing" id="YFk-4T-AFw"/>
+                            <constraint firstItem="kUU-PB-I6j" firstAttribute="trailing" secondItem="llF-da-DfO" secondAttribute="trailing" id="Zwi-dE-lhZ"/>
+                            <constraint firstItem="kUU-PB-I6j" firstAttribute="top" secondItem="xQ6-lp-5Ew" secondAttribute="top" id="lcZ-3V-Oul"/>
+                            <constraint firstItem="kUU-PB-I6j" firstAttribute="leading" secondItem="llF-da-DfO" secondAttribute="leading" id="q8o-XR-t3Q"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xQ6-lp-5Ew"/>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="kUU-PB-I6j" id="2Hk-cz-1So"/>
+                        <outlet property="imageView" destination="kUU-PB-I6j" id="x5N-cY-mzM"/>
+                        <outlet property="imageView2" destination="llF-da-DfO" id="6vL-i3-Hkb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oQp-EL-yZa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="290" y="798"/>
+            <point key="canvasLocation" x="288.80000000000001" y="797.45127436281871"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -141,8 +134,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dj6-hc-Qkx">
-                                <rect key="frame" x="0.0" y="96" width="414" height="384"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dj6-hc-Qkx">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                             </mapView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAA-kv-hPQ">
                                 <rect key="frame" x="96" y="10" width="197" height="21"/>
@@ -156,11 +149,18 @@
                         <constraints>
                             <constraint firstItem="dj6-hc-Qkx" firstAttribute="leading" secondItem="HVS-c7-8UH" secondAttribute="leading" id="06f-x8-Mep"/>
                             <constraint firstItem="HVS-c7-8UH" firstAttribute="bottom" secondItem="dj6-hc-Qkx" secondAttribute="bottom" id="7LC-u0-R8V"/>
-                            <constraint firstItem="dj6-hc-Qkx" firstAttribute="top" secondItem="HVS-c7-8UH" secondAttribute="top" constant="32" id="WsW-Ir-MGh"/>
+                            <constraint firstItem="dj6-hc-Qkx" firstAttribute="top" secondItem="HVS-c7-8UH" secondAttribute="top" id="WsW-Ir-MGh"/>
                             <constraint firstItem="HVS-c7-8UH" firstAttribute="trailing" secondItem="dj6-hc-Qkx" secondAttribute="trailing" id="bjF-6v-eeF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HVS-c7-8UH"/>
                     </view>
+                    <navigationItem key="navigationItem" id="qsr-F4-OYS">
+                        <barButtonItem key="rightBarButtonItem" title="Drop Pin" id="zjg-Dj-kWP">
+                            <connections>
+                                <action selector="buttonPressed:" destination="blp-1X-hZx" id="aFn-0G-U8D"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="labelText" destination="TAA-kv-hPQ" id="w27-fN-V1j"/>
                         <outlet property="mapView" destination="dj6-hc-Qkx" id="2dw-hZ-iJq"/>
@@ -168,7 +168,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gGq-pg-UTu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1392.8" y="-112.89355322338831"/>
+            <point key="canvasLocation" x="2221.739130434783" y="-656.25"/>
         </scene>
         <!--Drivers Info View Controller-->
         <scene sceneID="ng7-tw-672">
@@ -359,6 +359,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="US6-e0-LJe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-566" y="-31"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Wsy-fh-ewn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0tX-v4-emZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4K8-WS-Jyq">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="blp-1X-hZx" kind="relationship" relationship="rootViewController" id="eje-2b-kaw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fb4-jn-Fev" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1510" y="-228"/>
         </scene>
     </scenes>
     <resources>
