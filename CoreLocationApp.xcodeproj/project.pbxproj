@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4695A1E020116EF500A55BE1 /* Camera1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4695A1DF20116EF500A55BE1 /* Camera1ViewController.swift */; };
 		50B1009C2011542C00409446 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B1009B2011542C00409446 /* AppDelegate.swift */; };
 		50B1009E2011542C00409446 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B1009D2011542C00409446 /* ViewController.swift */; };
 		50B100A12011542C00409446 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50B1009F2011542C00409446 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 		50B100A92011542C00409446 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50B100A72011542C00409446 /* LaunchScreen.storyboard */; };
 		50B100B42011542C00409446 /* CoreLocationAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B100B32011542C00409446 /* CoreLocationAppUITests.swift */; };
 		AB72C37E20117705003ED9F1 /* DriversInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB72C37D20117705003ED9F1 /* DriversInfoViewController.swift */; };
+		50B100BF2011616F00409446 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B100BE2011616F00409446 /* LocationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4695A1DF20116EF500A55BE1 /* Camera1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera1ViewController.swift; sourceTree = "<group>"; };
 		50B100982011542C00409446 /* CoreLocationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreLocationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B1009B2011542C00409446 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50B1009D2011542C00409446 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,7 +42,11 @@
 		50B100AF2011542C00409446 /* CoreLocationAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreLocationAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B100B32011542C00409446 /* CoreLocationAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocationAppUITests.swift; sourceTree = "<group>"; };
 		50B100B52011542C00409446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		AB72C37D20117705003ED9F1 /* DriversInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriversInfoViewController.swift; sourceTree = "<group>"; };
+=======
+		50B100BE2011616F00409446 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+>>>>>>> d76f9c7b8bccfeec58241a0f1cda0901a577fb3f
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +91,9 @@
 				50B1009B2011542C00409446 /* AppDelegate.swift */,
 				AB72C37D20117705003ED9F1 /* DriversInfoViewController.swift */,
 				50B1009D2011542C00409446 /* ViewController.swift */,
+				50B100BE2011616F00409446 /* LocationViewController.swift */,
 				50B1009F2011542C00409446 /* Main.storyboard */,
+				4695A1DF20116EF500A55BE1 /* Camera1ViewController.swift */,
 				50B100A52011542C00409446 /* Assets.xcassets */,
 				50B100A72011542C00409446 /* LaunchScreen.storyboard */,
 				50B100AA2011542C00409446 /* Info.plist */,
@@ -207,8 +216,10 @@
 			files = (
 				AB72C37E20117705003ED9F1 /* DriversInfoViewController.swift in Sources */,
 				50B1009E2011542C00409446 /* ViewController.swift in Sources */,
+				4695A1E020116EF500A55BE1 /* Camera1ViewController.swift in Sources */,
 				50B100A42011542C00409446 /* CoreLocationApp.xcdatamodeld in Sources */,
 				50B1009C2011542C00409446 /* AppDelegate.swift in Sources */,
+				50B100BF2011616F00409446 /* LocationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
