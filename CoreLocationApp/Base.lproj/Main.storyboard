@@ -61,7 +61,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvb-hR-BtC">
                                 <rect key="frame" x="139" y="578" width="136" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.12549019610000001" green="0.59999999999999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="136" id="LOO-gT-zkK"/>
                                 </constraints>
@@ -72,19 +72,6 @@
                                     <segue destination="blp-1X-hZx" kind="show" id="CzB-iB-lqr"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ph6-7T-Ebj">
-                                <rect key="frame" x="139" y="498" width="136" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="136" id="1J8-F5-DSW"/>
-                                </constraints>
-                                <state key="normal" title="Take a photo">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="o3s-M5-E11" kind="show" id="I4o-Jo-Ua0"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="bbT-Fn-W5w">
                                 <rect key="frame" x="20" y="100" width="374" height="368"/>
                                 <constraints>
@@ -93,7 +80,7 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1H5-Lb-ucc">
                                 <rect key="frame" x="139" y="538" width="136" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.12549019610000001" green="0.59999999999999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="136" id="zCQ-09-Ybw"/>
                                 </constraints>
@@ -102,6 +89,19 @@
                                 </state>
                                 <connections>
                                     <segue destination="50h-6I-76X" kind="show" id="vo8-E7-8Uh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ph6-7T-Ebj">
+                                <rect key="frame" x="139" y="498" width="136" height="30"/>
+                                <color key="backgroundColor" red="0.12549019607843137" green="0.59999999999999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="136" id="1J8-F5-DSW"/>
+                                </constraints>
+                                <state key="normal" title="Take a photo">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="o3s-M5-E11" kind="show" id="I4o-Jo-Ua0"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -382,4 +382,7 @@
     <resources>
         <image name="logo" width="2054" height="2172"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="CzB-iB-lqr"/>
+    </inferredMetricsTieBreakers>
 </document>
