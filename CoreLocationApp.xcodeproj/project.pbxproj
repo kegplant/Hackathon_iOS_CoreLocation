@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		36E9413C4F622A00188C51D1 /* Pods_CoreLocationApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA5037025E579EF348F4743B /* Pods_CoreLocationApp.framework */; };
+		36E9413C4F622A00188C51D1 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
 		4695A1E020116EF500A55BE1 /* Camera1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4695A1DF20116EF500A55BE1 /* Camera1ViewController.swift */; };
 		50B1009C2011542C00409446 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B1009B2011542C00409446 /* AppDelegate.swift */; };
 		50B1009E2011542C00409446 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B1009D2011542C00409446 /* ViewController.swift */; };
@@ -17,8 +17,9 @@
 		50B100A92011542C00409446 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50B100A72011542C00409446 /* LaunchScreen.storyboard */; };
 		50B100B42011542C00409446 /* CoreLocationAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B100B32011542C00409446 /* CoreLocationAppUITests.swift */; };
 		50B100BF2011616F00409446 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B100BE2011616F00409446 /* LocationViewController.swift */; };
-		99A535F2DC4D40244875500F /* Pods_CoreLocationAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA82622A83018F372133D788 /* Pods_CoreLocationAppUITests.framework */; };
 		AB72C37E20117705003ED9F1 /* DriversInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB72C37D20117705003ED9F1 /* DriversInfoViewController.swift */; };
+		B27E75F60E25CCF6C3E4EE43 /* Pods_CoreLocationApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3CD29C26115DB56B70903F /* Pods_CoreLocationApp.framework */; };
+		F2236C7CA116BD7A75CBAFB5 /* Pods_CoreLocationAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46638DFAD71112B6EA79EAB9 /* Pods_CoreLocationAppUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +33,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A3CD29C26115DB56B70903F /* Pods_CoreLocationApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreLocationApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1369F70A12B61CA3798332D4 /* Pods-CoreLocationAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreLocationAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoreLocationAppUITests/Pods-CoreLocationAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3535A1DA9244ABF0B885F860 /* Pods-CoreLocationAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreLocationAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoreLocationAppUITests/Pods-CoreLocationAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		46638DFAD71112B6EA79EAB9 /* Pods_CoreLocationAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreLocationAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		468FEBEB2011CC160074DD7B /* CoreLocationApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreLocationApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		4695A1DF20116EF500A55BE1 /* Camera1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera1ViewController.swift; sourceTree = "<group>"; };
 		50B100982011542C00409446 /* CoreLocationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreLocationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,12 +51,9 @@
 		50B100B32011542C00409446 /* CoreLocationAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocationAppUITests.swift; sourceTree = "<group>"; };
 		50B100B52011542C00409446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50B100BE2011616F00409446 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
-		68B334E37E3BE7ADF6E3A02F /* Pods-CoreLocationApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreLocationApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoreLocationApp/Pods-CoreLocationApp.debug.xcconfig"; sourceTree = "<group>"; };
-		8D030A56EDA7E28A652EC14E /* Pods-CoreLocationAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreLocationAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoreLocationAppUITests/Pods-CoreLocationAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		AA82622A83018F372133D788 /* Pods_CoreLocationAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreLocationAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C42477C6F83885F4C0820D3 /* Pods-CoreLocationApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreLocationApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoreLocationApp/Pods-CoreLocationApp.release.xcconfig"; sourceTree = "<group>"; };
 		AB72C37D20117705003ED9F1 /* DriversInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriversInfoViewController.swift; sourceTree = "<group>"; };
-		E28BD08CA71AF37CE026EA1E /* Pods-CoreLocationApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreLocationApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoreLocationApp/Pods-CoreLocationApp.release.xcconfig"; sourceTree = "<group>"; };
-		EA5037025E579EF348F4743B /* Pods_CoreLocationApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreLocationApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4C5D53C5C3076DBBE05F2EE /* Pods-CoreLocationApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreLocationApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoreLocationApp/Pods-CoreLocationApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +61,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36E9413C4F622A00188C51D1 /* Pods_CoreLocationApp.framework in Frameworks */,
+				36E9413C4F622A00188C51D1 /* BuildFile in Frameworks */,
+				B27E75F60E25CCF6C3E4EE43 /* Pods_CoreLocationApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99A535F2DC4D40244875500F /* Pods_CoreLocationAppUITests.framework in Frameworks */,
+				F2236C7CA116BD7A75CBAFB5 /* Pods_CoreLocationAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,8 +80,8 @@
 		4BEA0370B055BC2D934078AD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EA5037025E579EF348F4743B /* Pods_CoreLocationApp.framework */,
-				AA82622A83018F372133D788 /* Pods_CoreLocationAppUITests.framework */,
+				0A3CD29C26115DB56B70903F /* Pods_CoreLocationApp.framework */,
+				46638DFAD71112B6EA79EAB9 /* Pods_CoreLocationAppUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -134,10 +136,10 @@
 		80CF2D569C134565164FD8B2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				68B334E37E3BE7ADF6E3A02F /* Pods-CoreLocationApp.debug.xcconfig */,
-				E28BD08CA71AF37CE026EA1E /* Pods-CoreLocationApp.release.xcconfig */,
-				8D030A56EDA7E28A652EC14E /* Pods-CoreLocationAppUITests.debug.xcconfig */,
 				3535A1DA9244ABF0B885F860 /* Pods-CoreLocationAppUITests.release.xcconfig */,
+				C4C5D53C5C3076DBBE05F2EE /* Pods-CoreLocationApp.debug.xcconfig */,
+				9C42477C6F83885F4C0820D3 /* Pods-CoreLocationApp.release.xcconfig */,
+				1369F70A12B61CA3798332D4 /* Pods-CoreLocationAppUITests.debug.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -510,7 +512,7 @@
 		};
 		50B100B92011542C00409446 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 68B334E37E3BE7ADF6E3A02F /* Pods-CoreLocationApp.debug.xcconfig */;
+			baseConfigurationReference = C4C5D53C5C3076DBBE05F2EE /* Pods-CoreLocationApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -529,7 +531,7 @@
 		};
 		50B100BA2011542C00409446 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E28BD08CA71AF37CE026EA1E /* Pods-CoreLocationApp.release.xcconfig */;
+			baseConfigurationReference = 9C42477C6F83885F4C0820D3 /* Pods-CoreLocationApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -547,7 +549,7 @@
 		};
 		50B100BC2011542C00409446 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8D030A56EDA7E28A652EC14E /* Pods-CoreLocationAppUITests.debug.xcconfig */;
+			baseConfigurationReference = 1369F70A12B61CA3798332D4 /* Pods-CoreLocationAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
