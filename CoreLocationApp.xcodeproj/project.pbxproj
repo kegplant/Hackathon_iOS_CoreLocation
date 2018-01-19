@@ -15,6 +15,8 @@
 		50B100A62011542C00409446 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50B100A52011542C00409446 /* Assets.xcassets */; };
 		50B100A92011542C00409446 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50B100A72011542C00409446 /* LaunchScreen.storyboard */; };
 		50B100B42011542C00409446 /* CoreLocationAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B100B32011542C00409446 /* CoreLocationAppUITests.swift */; };
+		AB72C37E20117705003ED9F1 /* DriversInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB72C37D20117705003ED9F1 /* DriversInfoViewController.swift */; };
+		50B100BF2011616F00409446 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B100BE2011616F00409446 /* LocationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		50B100AF2011542C00409446 /* CoreLocationAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreLocationAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B100B32011542C00409446 /* CoreLocationAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocationAppUITests.swift; sourceTree = "<group>"; };
 		50B100B52011542C00409446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB72C37D20117705003ED9F1 /* DriversInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriversInfoViewController.swift; sourceTree = "<group>"; };
+		50B100BE2011616F00409446 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +86,9 @@
 			isa = PBXGroup;
 			children = (
 				50B1009B2011542C00409446 /* AppDelegate.swift */,
+				AB72C37D20117705003ED9F1 /* DriversInfoViewController.swift */,
 				50B1009D2011542C00409446 /* ViewController.swift */,
+				50B100BE2011616F00409446 /* LocationViewController.swift */,
 				50B1009F2011542C00409446 /* Main.storyboard */,
 				4695A1DF20116EF500A55BE1 /* Camera1ViewController.swift */,
 				50B100A52011542C00409446 /* Assets.xcassets */,
@@ -205,10 +211,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB72C37E20117705003ED9F1 /* DriversInfoViewController.swift in Sources */,
 				50B1009E2011542C00409446 /* ViewController.swift in Sources */,
 				4695A1E020116EF500A55BE1 /* Camera1ViewController.swift in Sources */,
 				50B100A42011542C00409446 /* CoreLocationApp.xcdatamodeld in Sources */,
 				50B1009C2011542C00409446 /* AppDelegate.swift in Sources */,
+				50B100BF2011616F00409446 /* LocationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,10 +370,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FKK74628NB;
+				DEVELOPMENT_TEAM = 8KXZDGT6E4;
 				INFOPLIST_FILE = CoreLocationApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Self.CoreLocationApp-LT";
+				PRODUCT_BUNDLE_IDENTIFIER = Self.CoreLocationApp2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -377,10 +385,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FKK74628NB;
+				DEVELOPMENT_TEAM = 8KXZDGT6E4;
 				INFOPLIST_FILE = CoreLocationApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Self.CoreLocationApp-LT";
+				PRODUCT_BUNDLE_IDENTIFIER = Self.CoreLocationApp2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
