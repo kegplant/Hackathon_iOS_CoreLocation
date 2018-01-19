@@ -10,10 +10,11 @@ import UIKit
 import CoreLocation
 import MapKit
 
-class LocationViewController:UIViewController, CLLocationManagerDelegate, MKMapViewDelegate{
+class LocationViewController:UIViewController, MKMapViewDelegate{
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var labelText: UILabel!
     let locationManager = CLLocationManager()
+
     let regionRadius: CLLocationDistance = 1000
     var lastLocation:CLLocation?
     var firstTime=true
@@ -28,6 +29,21 @@ class LocationViewController:UIViewController, CLLocationManagerDelegate, MKMapV
 //            centerMapOnLocation(location: initialLocation)
 //        }
     }
+    
+    
+
+    func centerMapOnLocation(location: CLLocation) {
+        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
+                                                                  regionRadius, regionRadius)
+        mapView.setRegion(coordinateRegion, animated: true)
+    }
+}
+
+
+
+
+
+extension LocationViewController: CLLocationManagerDelegate{
     func enableBasicLocationServices() {
         locationManager.delegate = self
         
@@ -79,16 +95,11 @@ class LocationViewController:UIViewController, CLLocationManagerDelegate, MKMapV
             let initialLocation = lastLocation!
             centerMapOnLocation(location: initialLocation)
         }
-//
-//            CLLocation(latitude: 21.282778, longitude: -157.829444)
-//
+        //
+        //            CLLocation(latitude: 21.282778, longitude: -157.829444)
+        //
         print(lastLocation)
         
         // Do something with the location.
-    }
-    func centerMapOnLocation(location: CLLocation) {
-        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
-                                                                  regionRadius, regionRadius)
-        mapView.setRegion(coordinateRegion, animated: true)
     }
 }

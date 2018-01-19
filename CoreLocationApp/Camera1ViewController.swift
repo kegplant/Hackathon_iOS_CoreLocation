@@ -46,6 +46,7 @@ class Camera1ViewController: UIViewController, UIImagePickerControllerDelegate, 
         //allows
         func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
             //image object...use the
+            print("about to save image!")
             let image = info[UIImagePickerControllerOriginalImage] as! UIImage
             
             imageView.image = image
