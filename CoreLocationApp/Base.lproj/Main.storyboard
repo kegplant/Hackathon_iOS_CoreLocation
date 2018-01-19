@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fUo-35-HXI">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,17 +15,17 @@
             <objects>
                 <viewController id="o3s-M5-E11" userLabel="Camera View Controller" customClass="Camera1ViewController" customModule="CoreLocationApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="A4E-e0-Qkq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kUU-PB-I6j">
-                                <rect key="frame" x="0.0" y="10" width="375" height="284"/>
+                                <rect key="frame" x="0.0" y="10" width="414" height="284"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="284" id="QIM-98-d46"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DbV-ZL-m4X">
-                                <rect key="frame" x="153" y="596" width="69" height="30"/>
+                                <rect key="frame" x="172.66666666666666" y="665" width="69" height="30"/>
                                 <state key="normal" title="Car Photo"/>
                                 <connections>
                                     <action selector="takePictureWith_sender:" destination="o3s-M5-E11" eventType="touchUpInside" id="FPN-iw-YrA"/>
@@ -63,7 +63,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoreLocationApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvb-hR-BtC">
@@ -112,11 +112,11 @@
             <objects>
                 <viewController id="blp-1X-hZx" customClass="LocationViewController" customModule="CoreLocationApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wmL-NL-C6n">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dj6-hc-Qkx">
-                                <rect key="frame" x="0.0" y="96" width="375" height="571"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dj6-hc-Qkx">
+                                <rect key="frame" x="0.0" y="96" width="414" height="384"/>
                             </mapView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAA-kv-hPQ">
                                 <rect key="frame" x="96" y="10" width="197" height="21"/>
@@ -149,14 +149,14 @@
             <objects>
                 <viewController id="50h-6I-76X" customClass="DriversInfoViewController" customModule="CoreLocationApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ncG-aa-4n8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8kw-Gt-2jp">
-                                <rect key="frame" x="8" y="64" width="359" height="603"/>
+                                <rect key="frame" x="8" y="64" width="398" height="603"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLI-DX-3Aq">
-                                        <rect key="frame" x="195" y="509" width="109" height="34"/>
+                                        <rect key="frame" x="195" y="476.33333333333337" width="109" height="34"/>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="109" id="UBg-j4-lJV"/>
@@ -179,7 +179,7 @@
                                         </date>
                                     </datePicker>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="GBP-rT-zy1">
-                                        <rect key="frame" x="32" y="101.5" width="272" height="228"/>
+                                        <rect key="frame" x="32" y="101.66666666666666" width="272" height="194.99999999999997"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SGs-vE-Nji">
                                                 <rect key="frame" x="0.0" y="0.0" width="272" height="30"/>
@@ -187,38 +187,32 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="name"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4gw-rl-mPl">
-                                                <rect key="frame" x="0.0" y="33" width="272" height="30"/>
-                                                <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="family-name"/>
-                                            </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B0I-0b-Clv">
-                                                <rect key="frame" x="0.0" y="66" width="272" height="30"/>
+                                                <rect key="frame" x="0.0" y="33" width="272" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="tel"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Driver's License No." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wna-WR-Lmg">
-                                                <rect key="frame" x="0.0" y="99" width="272" height="30"/>
+                                                <rect key="frame" x="0.0" y="66" width="272" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insurance Company" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nz3-OQ-Xof">
-                                                <rect key="frame" x="0.0" y="132" width="272" height="30"/>
+                                                <rect key="frame" x="0.0" y="99.000000000000028" width="272" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Policy Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6au-Y8-mkA">
-                                                <rect key="frame" x="0.0" y="165" width="272" height="30"/>
+                                                <rect key="frame" x="0.0" y="132.00000000000003" width="272" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpy-Z9-4j1">
-                                                <rect key="frame" x="0.0" y="198" width="272" height="30"/>
+                                                <rect key="frame" x="0.0" y="165.00000000000003" width="272" height="30"/>
                                                 <color key="backgroundColor" red="0.59743040800094604" green="0.78230851888656616" blue="0.91991257667541504" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
                                                 <state key="normal" title="Add passenger/witness">
@@ -228,13 +222,13 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vehicle Information" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CnE-b4-6fs">
-                                        <rect key="frame" x="8" y="337.5" width="320" height="27.5"/>
+                                        <rect key="frame" x="8" y="304.66666666666669" width="320" height="27.666666666666686"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
                                         <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="TlD-HW-sRJ">
-                                        <rect key="frame" x="32" y="373" width="272" height="120"/>
+                                        <rect key="frame" x="32" y="340.33333333333331" width="272" height="120"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="License Plate #" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2z6-hV-Wgb">
                                                 <rect key="frame" x="0.0" y="0.0" width="272" height="30"/>
@@ -263,7 +257,7 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Driver's Information" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJM-cf-ctG">
-                                        <rect key="frame" x="8" y="66" width="320" height="27.5"/>
+                                        <rect key="frame" x="8" y="66" width="320" height="27.666666666666671"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
                                         <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -303,9 +297,8 @@
                         <outlet property="color" destination="UEh-9Q-mP1" id="qC4-XV-jil"/>
                         <outlet property="dateAndTime" destination="qL3-0h-Ax6" id="OJv-5L-qG8"/>
                         <outlet property="driversLicense" destination="Wna-WR-Lmg" id="7HN-ex-SWZ"/>
-                        <outlet property="firstName" destination="SGs-vE-Nji" id="dh4-gG-hdZ"/>
+                        <outlet property="fullName" destination="SGs-vE-Nji" id="1dg-WY-OR5"/>
                         <outlet property="insuranceCompany" destination="nz3-OQ-Xof" id="wRK-Lz-tRb"/>
-                        <outlet property="lastName" destination="4gw-rl-mPl" id="uPC-Z1-K7u"/>
                         <outlet property="licensePlateNumber" destination="2z6-hV-Wgb" id="FEB-V4-Fd6"/>
                         <outlet property="make" destination="fHx-IY-Ert" id="e4R-LH-1XL"/>
                         <outlet property="model" destination="KvP-CQ-gPm" id="TAn-i1-hda"/>
@@ -323,7 +316,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fUo-35-HXI" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Yws-hW-5YV">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
