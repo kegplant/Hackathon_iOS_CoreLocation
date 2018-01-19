@@ -42,7 +42,7 @@ class Camera1ViewController: UIViewController, UIImagePickerControllerDelegate, 
     
     func makeButton() -> UIButton {
         let button = UIButton()
-        button.setTitle("TAKE A PICTURE OF THE OTHER CAR.", for: .normal)
+//        button.setTitle("TAKE A PICTURE OF THE OTHER CAR.", for: .normal)
         button.setTitleColor(UIColor.black, for: .normal)
         button.addTarget(self, action: #selector(buttonTouched(button:)), for: .touchUpInside)
         

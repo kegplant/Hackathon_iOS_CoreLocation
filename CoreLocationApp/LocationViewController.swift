@@ -18,7 +18,7 @@ class LocationViewController:UIViewController, MKMapViewDelegate{
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     let regionRadius: CLLocationDistance = 1000
     var lastLocation:CLLocation?
-    var firstTime=false
+    var firstTime=true
     var accidentLocations:[AccidentLocation]=[]
     
     override func viewDidLoad() {
@@ -31,13 +31,14 @@ class LocationViewController:UIViewController, MKMapViewDelegate{
             print("dropping pin")
             let pin = Pin(coordinate: accidentLocation.coordinate)
             mapView.addAnnotation(pin)
+            print(mapView.annotations)
         } else {
-            centerMapOnLocation(location: CLLocation(latitude: 37.38543025, longitude: -121.90970962))
-//            firstTime=True
+//            centerMapOnLocation(location: CLLocation(latitude: 37.38543025, longitude: -121.90970962))
+            firstTime=true
         }
         self.mapView.delegate =  self;
         self.mapView.showsUserLocation = true;
-        labelText.text="Your pin will be saved for your future reference."
+        labelText.text="Your pin will be saved for your reference."
         enableBasicLocationServices()
 //        if let initialLocation = lastLocation {
 //            centerMapOnLocation(location: initialLocation)
@@ -78,6 +79,7 @@ class LocationViewController:UIViewController, MKMapViewDelegate{
                 let newLocation = AccidentLocation(context: context)
                 newLocation.latitude=(lastLocation?.coordinate.latitude)!
                 newLocation.longitude=(lastLocation?.coordinate.longitude)!
+                accidentLocations=fetch()
             }
             locationSave()
         }
@@ -87,7 +89,20 @@ class LocationViewController:UIViewController, MKMapViewDelegate{
 //
 //    }
     
+    @IBAction func deleteButtonPressed(_ sender: UIBarButtonItem) {
+        if accidentLocations.count>0 {
+            context.delete(accidentLocations[0])
+            locationSave()
+            accidentLocations=fetch()
+            var annotations=mapView.annotations
+            for annotationUnknown in annotations{
+                guard let annotation = annotationUnknown as? Pin else { continue}
+                mapView.removeAnnotation(annotation)
+            }
 
+        }
+    }
+    
     func centerMapOnLocation(location: CLLocation) {
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
                                                                   regionRadius, regionRadius)

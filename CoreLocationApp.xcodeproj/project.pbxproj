@@ -522,7 +522,7 @@
 				DEVELOPMENT_TEAM = 8KXZDGT6E4;
 				INFOPLIST_FILE = CoreLocationApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Self.CoreLocationApp2;
+				PRODUCT_BUNDLE_IDENTIFIER = Self.CoreLocationApp3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "CoreLocationApp/CoreLocationApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -540,7 +540,7 @@
 				DEVELOPMENT_TEAM = 8KXZDGT6E4;
 				INFOPLIST_FILE = CoreLocationApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Self.CoreLocationApp2;
+				PRODUCT_BUNDLE_IDENTIFIER = Self.CoreLocationApp3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "CoreLocationApp/CoreLocationApp-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;

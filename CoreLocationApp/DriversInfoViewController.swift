@@ -41,6 +41,7 @@ class DriversInfoViewController: UIViewController {
             color.text = driverInfo[0].color
             make.text = driverInfo[0].make
             model.text = driverInfo[0].model
+            dateAndTime.date = driverInfo[0].dateAndTime!
 //            dateAndTime.date = driverInfo[0].dateAndTime!
         }
         
@@ -97,6 +98,7 @@ class DriversInfoViewController: UIViewController {
         newDriver.color = color.text
         newDriver.make = make.text
         newDriver.model = model.text
+        newDriver.dateAndTime = dateAndTime.date
         
         missionSave()
         performSegue(withIdentifier: "unwindToThisViewController", sender: self)
