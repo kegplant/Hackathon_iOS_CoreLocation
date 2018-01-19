@@ -42,11 +42,8 @@
 		50B100AF2011542C00409446 /* CoreLocationAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreLocationAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B100B32011542C00409446 /* CoreLocationAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocationAppUITests.swift; sourceTree = "<group>"; };
 		50B100B52011542C00409446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-<<<<<<< HEAD
 		AB72C37D20117705003ED9F1 /* DriversInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriversInfoViewController.swift; sourceTree = "<group>"; };
-=======
 		50B100BE2011616F00409446 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
->>>>>>> d76f9c7b8bccfeec58241a0f1cda0901a577fb3f
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
