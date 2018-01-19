@@ -24,6 +24,8 @@ class LocationViewController:UIViewController, CLLocationManagerDelegate, MKMapV
         self.mapView.showsUserLocation = true;
         labelText.text="it works!"
         enableBasicLocationServices()
+
+        
 //        if let initialLocation = lastLocation {
 //            centerMapOnLocation(location: initialLocation)
 //        }
@@ -91,4 +93,6 @@ class LocationViewController:UIViewController, CLLocationManagerDelegate, MKMapV
                                                                   regionRadius, regionRadius)
         mapView.setRegion(coordinateRegion, animated: true)
     }
+    
+
 }
