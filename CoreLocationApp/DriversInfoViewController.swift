@@ -11,7 +11,9 @@ import CoreData
 
 class DriversInfoViewController: UIViewController {
     
-    let managedObjectContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    var driverInfo: [DriversInfoItem] = []
+    
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
 
     @IBOutlet weak var dateAndTime: UIDatePicker!
     @IBOutlet weak var fullName: UITextField!
@@ -26,11 +28,36 @@ class DriversInfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        driverInfo = fetch()
+        fullName.text = driverInfo[0].fullName
+        
         self.hideKeyboardWhenTappedAround()
         // Do any additional setup after loading the view.
     }
-
+    
+    func fetch() ->[DriversInfoItem] {
+        let driversInfoItemRequest:NSFetchRequest<DriversInfoItem> = DriversInfoItem.fetchRequest()
+        do {
+            let fetchedMissions = try context.fetch(driversInfoItemRequest)
+            return fetchedMissions
+        }
+        catch {
+            print("fetch error: ")
+            print(error)
+            return []
+        }
+    }
+    
+    func missionSave(){
+        do{
+            try context.save()
+        } catch{
+            print("core data save error: ")
+            print(error)
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -38,6 +65,11 @@ class DriversInfoViewController: UIViewController {
     
     @IBAction func submitButtonPressed(_ sender: UIButton) {
         print("submit")
+//        let newDriver = DriversInfoItem(context: context)
+        let newDriver = NSEntityDescription.insertNewObject(forEntityName: "DriversInfoItem", into: context) as! DriversInfoItem
+        newDriver.fullName = fullName.text
+        missionSave()
+        performSegue(withIdentifier: "unwindToThisViewController", sender: self)
         
     }
     
@@ -51,15 +83,16 @@ class DriversInfoViewController: UIViewController {
 //        }
 //    }
     
-    /*
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+//        let destination = segue.destination as! ViewController
     }
-    */
 
 }
 
