@@ -13,6 +13,10 @@ import UIKit
 class Camera1ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var imageView: UIImageView!
+    
+//    var imagePicker: UIImagePickerController!
+
+    
     @IBAction func takePicture(_sender: Any){
         
         let imagePickerController = UIImagePickerController()
@@ -40,20 +44,23 @@ class Camera1ViewController: UIViewController, UIImagePickerControllerDelegate, 
         
         //allows user to select cancel
         actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+            print("allowing it to cancel")
             self.present(actionSheet, animated: true, completion: nil)
         }
-        
-        //allows
+    
+    
+    
+        //allows to get the image
         func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
             //image object...use the
             let image = info[UIImagePickerControllerOriginalImage] as! UIImage
-            
             imageView.image = image
             print ("i have the photo now")
             picker.dismiss(animated: true, completion: nil)
         }
         
         func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+            print("imagePickerControllerDidCancel")
             picker.dismiss(animated: true, completion: nil)
     }
 

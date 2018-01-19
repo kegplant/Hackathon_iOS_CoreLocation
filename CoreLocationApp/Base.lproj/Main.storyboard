@@ -32,11 +32,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Rj-6c-W1b">
-                                <rect key="frame" x="142" y="476" width="90" height="30"/>
+                                <rect key="frame" x="149" y="476" width="77" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Import photo"/>
+                                <state key="normal" title="Save photo"/>
                                 <connections>
                                     <action selector="importImage:" destination="o3s-M5-E11" eventType="touchUpInside" id="G4J-zd-hIF"/>
+                                    <action selector="saveButtonPressed:" destination="o3s-M5-E11" eventType="touchUpInside" id="S1R-vK-25A"/>
                                 </connections>
                             </button>
                         </subviews>
