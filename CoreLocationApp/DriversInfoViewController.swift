@@ -30,7 +30,18 @@ class DriversInfoViewController: UIViewController {
         super.viewDidLoad()
         
         driverInfo = fetch()
-        fullName.text = driverInfo[0].fullName
+        if driverInfo.count > 1 {
+            fullName.text = driverInfo[0].fullName
+            phoneNumber.text = driverInfo[0].phoneNumber
+            driversLicense.text = driverInfo[0].driversLicense
+            insuranceCompany.text = driverInfo[0].insuranceCompany
+            policyNumber.text = driverInfo[0].policyNumber
+            licensePlateNumber.text = driverInfo[0].licensePlateNumber
+            color.text = driverInfo[0].color
+            make.text = driverInfo[0].make
+            model.text = driverInfo[0].model
+//            dateAndTime.date = driverInfo[0].dateAndTime!
+        }
         
         self.hideKeyboardWhenTappedAround()
         // Do any additional setup after loading the view.
@@ -68,6 +79,15 @@ class DriversInfoViewController: UIViewController {
 //        let newDriver = DriversInfoItem(context: context)
         let newDriver = NSEntityDescription.insertNewObject(forEntityName: "DriversInfoItem", into: context) as! DriversInfoItem
         newDriver.fullName = fullName.text
+        newDriver.phoneNumber = phoneNumber.text
+        newDriver.driversLicense = driversLicense.text
+        newDriver.insuranceCompany = insuranceCompany.text
+        newDriver.policyNumber = policyNumber.text
+        newDriver.licensePlateNumber = licensePlateNumber.text
+        newDriver.color = color.text
+        newDriver.make = make.text
+        newDriver.model = model.text
+        
         missionSave()
         performSegue(withIdentifier: "unwindToThisViewController", sender: self)
         
@@ -100,9 +120,7 @@ extension UIViewController {
     func hideKeyboardWhenTappedAround() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
-        
     }
-    
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }
