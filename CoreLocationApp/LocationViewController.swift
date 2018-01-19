@@ -28,8 +28,16 @@ class LocationViewController:UIViewController, MKMapViewDelegate{
 //        if let initialLocation = lastLocation {
 //            centerMapOnLocation(location: initialLocation)
 //        }
+        
+        // show artwork on map
+
+        
     }
     
+    @IBAction func buttonPressed(_ sender: UIButton) {
+        let pin = Pin(coordinate: (lastLocation?.coordinate)!)
+        mapView.addAnnotation(pin)
+    }
     
 
     func centerMapOnLocation(location: CLLocation) {
