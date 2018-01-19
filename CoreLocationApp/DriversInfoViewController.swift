@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import CoreData
 
 class DriversInfoViewController: UIViewController {
+    
+    let managedObjectContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
 
     @IBOutlet weak var dateAndTime: UIDatePicker!
-    @IBOutlet weak var firstName: UITextField!
-    @IBOutlet weak var lastName: UITextField!
+    @IBOutlet weak var fullName: UITextField!
     @IBOutlet weak var phoneNumber: UITextField!
     @IBOutlet weak var driversLicense: UITextField!
     @IBOutlet weak var insuranceCompany: UITextField!
@@ -36,7 +38,18 @@ class DriversInfoViewController: UIViewController {
     
     @IBAction func submitButtonPressed(_ sender: UIButton) {
         print("submit")
+        
     }
+    
+//    func fetchAllItems() {
+//        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "DriversInfoItem")
+//        do {
+//            let result = managedObjectContext.fetch(request)
+//            let item = result as! [DriversInfoItem]
+//        } catch {
+//            print("\(error)")
+//        }
+//    }
     
     /*
     // MARK: - Navigation
