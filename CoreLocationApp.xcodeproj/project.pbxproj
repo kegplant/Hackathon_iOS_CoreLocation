@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		36E9413C4F622A00188C51D1 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
+		36E9413C4F622A00188C51D1 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		4695A1E020116EF500A55BE1 /* Camera1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4695A1DF20116EF500A55BE1 /* Camera1ViewController.swift */; };
 		50B1009C2011542C00409446 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B1009B2011542C00409446 /* AppDelegate.swift */; };
 		50B1009E2011542C00409446 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B1009D2011542C00409446 /* ViewController.swift */; };
@@ -62,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36E9413C4F622A00188C51D1 /* BuildFile in Frameworks */,
+				36E9413C4F622A00188C51D1 /* (null) in Frameworks */,
 				B27E75F60E25CCF6C3E4EE43 /* Pods_CoreLocationApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,7 +140,6 @@
 			children = (
 				3535A1DA9244ABF0B885F860 /* Pods-CoreLocationAppUITests.release.xcconfig */,
 				C4C5D53C5C3076DBBE05F2EE /* Pods-CoreLocationApp.debug.xcconfig */,
-				9C42477C6F83885F4C0820D3 /* Pods-CoreLocationApp.release.xcconfig */,
 				1369F70A12B61CA3798332D4 /* Pods-CoreLocationAppUITests.debug.xcconfig */,
 			);
 			name = Pods;
@@ -520,10 +519,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FKK74628NB;
+				DEVELOPMENT_TEAM = 78ZGGAF7H5;
 				INFOPLIST_FILE = CoreLocationApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Self.CoreLocationApp-LT";
+				PRODUCT_BUNDLE_IDENTIFIER = Self.CoreLocationApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "CoreLocationApp/CoreLocationApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -534,15 +533,14 @@
 		};
 		50B100BA2011542C00409446 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9C42477C6F83885F4C0820D3 /* Pods-CoreLocationApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FKK74628NB;
+				DEVELOPMENT_TEAM = 78ZGGAF7H5;
 				INFOPLIST_FILE = CoreLocationApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Self.CoreLocationApp-LT";
+				PRODUCT_BUNDLE_IDENTIFIER = Self.CoreLocationApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "CoreLocationApp/CoreLocationApp-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;

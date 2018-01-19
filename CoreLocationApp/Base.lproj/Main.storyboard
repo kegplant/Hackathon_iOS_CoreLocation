@@ -15,17 +15,17 @@
             <objects>
                 <viewController id="o3s-M5-E11" userLabel="Camera View Controller" customClass="Camera1ViewController" customModule="CoreLocationApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="A4E-e0-Qkq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kUU-PB-I6j">
-                                <rect key="frame" x="0.0" y="64" width="375" height="254"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="254"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="254" id="18d-ov-ldc"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="llF-da-DfO">
-                                <rect key="frame" x="0.0" y="388" width="375" height="279"/>
+                                <rect key="frame" x="0.0" y="457" width="414" height="279"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="279" id="bxa-Vj-1r6"/>
                                 </constraints>
@@ -56,11 +56,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoreLocationApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1H5-Lb-ucc">
-                                <rect key="frame" x="111" y="310" width="148" height="75"/>
+                                <rect key="frame" x="111" y="310" width="187" height="75"/>
                                 <color key="backgroundColor" red="0.93051099370000001" green="1" blue="0.32512554640000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="udt-6x-0zW"/>
@@ -73,7 +73,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ph6-7T-Ebj">
-                                <rect key="frame" x="111" y="167" width="148" height="75"/>
+                                <rect key="frame" x="111" y="167" width="187" height="75"/>
                                 <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="FYm-28-VWe"/>
@@ -87,7 +87,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accident Information" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IqF-PE-aV4">
-                                <rect key="frame" x="35" y="64" width="301" height="65"/>
+                                <rect key="frame" x="35" y="64" width="340" height="65"/>
                                 <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="TRr-G7-siz"/>
@@ -97,7 +97,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvb-hR-BtC">
-                                <rect key="frame" x="111" y="460" width="148" height="75"/>
+                                <rect key="frame" x="111" y="460" width="187" height="75"/>
                                 <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="EIS-9C-7Pz"/>
@@ -139,11 +139,11 @@
             <objects>
                 <viewController id="blp-1X-hZx" customClass="LocationViewController" customModule="CoreLocationApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wmL-NL-C6n">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dj6-hc-Qkx">
-                                <rect key="frame" x="0.0" y="115" width="414" height="621"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                             </mapView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAA-kv-hPQ">
                                 <rect key="frame" x="96" y="10" width="197" height="21"/>
@@ -152,27 +152,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNf-Jp-kSR">
-                                <rect key="frame" x="347" y="72" width="59" height="35"/>
-                                <state key="normal" title="Drop Pin"/>
-                                <connections>
-                                    <action selector="buttonPressed:" destination="blp-1X-hZx" eventType="touchUpInside" id="S3T-ZQ-28w"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="dj6-hc-Qkx" firstAttribute="leading" secondItem="HVS-c7-8UH" secondAttribute="leading" id="06f-x8-Mep"/>
-                            <constraint firstItem="HVS-c7-8UH" firstAttribute="trailing" secondItem="CNf-Jp-kSR" secondAttribute="trailing" constant="8" id="6ZH-J6-g50"/>
                             <constraint firstItem="HVS-c7-8UH" firstAttribute="bottom" secondItem="dj6-hc-Qkx" secondAttribute="bottom" id="7LC-u0-R8V"/>
-                            <constraint firstItem="CNf-Jp-kSR" firstAttribute="top" secondItem="HVS-c7-8UH" secondAttribute="top" constant="8" id="BoN-YN-JQW"/>
-                            <constraint firstItem="dj6-hc-Qkx" firstAttribute="top" secondItem="HVS-c7-8UH" secondAttribute="top" constant="51" id="WsW-Ir-MGh"/>
-                            <constraint firstItem="dj6-hc-Qkx" firstAttribute="top" secondItem="CNf-Jp-kSR" secondAttribute="bottom" constant="8" id="bLh-lw-3RZ"/>
+                            <constraint firstItem="dj6-hc-Qkx" firstAttribute="top" secondItem="HVS-c7-8UH" secondAttribute="top" id="WsW-Ir-MGh"/>
                             <constraint firstItem="HVS-c7-8UH" firstAttribute="trailing" secondItem="dj6-hc-Qkx" secondAttribute="trailing" id="bjF-6v-eeF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HVS-c7-8UH"/>
                     </view>
-                    <navigationItem key="navigationItem" id="qsr-F4-OYS"/>
+                    <navigationItem key="navigationItem" id="qsr-F4-OYS">
+                        <barButtonItem key="rightBarButtonItem" title="Drop Pin" id="zjg-Dj-kWP">
+                            <connections>
+                                <action selector="buttonPressed:" destination="blp-1X-hZx" id="aFn-0G-U8D"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="labelText" destination="TAA-kv-hPQ" id="w27-fN-V1j"/>
                         <outlet property="mapView" destination="dj6-hc-Qkx" id="2dw-hZ-iJq"/>
@@ -180,14 +176,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gGq-pg-UTu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2222" y="-656"/>
+            <point key="canvasLocation" x="2221.739130434783" y="-656.25"/>
         </scene>
         <!--Drivers Info View Controller-->
         <scene sceneID="ng7-tw-672">
             <objects>
                 <viewController id="50h-6I-76X" customClass="DriversInfoViewController" customModule="CoreLocationApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ncG-aa-4n8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8kw-Gt-2jp">
@@ -390,4 +386,7 @@
             <point key="canvasLocation" x="1510" y="-228"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="eje-2b-kaw"/>
+    </inferredMetricsTieBreakers>
 </document>

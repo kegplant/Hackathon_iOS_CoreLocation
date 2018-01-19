@@ -30,7 +30,8 @@ class DriversInfoViewController: UIViewController {
         super.viewDidLoad()
         
         driverInfo = fetch()
-        if driverInfo.count > 1 {
+        if driverInfo.count > 0 {
+            print("loading driver info")
             fullName.text = driverInfo[0].fullName
             phoneNumber.text = driverInfo[0].phoneNumber
             driversLicense.text = driverInfo[0].driversLicense
@@ -48,9 +49,11 @@ class DriversInfoViewController: UIViewController {
     }
     
     func fetch() ->[DriversInfoItem] {
+        print("fetching driversInfo")
         let driversInfoItemRequest:NSFetchRequest<DriversInfoItem> = DriversInfoItem.fetchRequest()
         do {
             let fetchedMissions = try context.fetch(driversInfoItemRequest)
+            print("driver count:\(fetchedMissions.count)")
             return fetchedMissions
         }
         catch {
@@ -62,7 +65,9 @@ class DriversInfoViewController: UIViewController {
     
     func missionSave(){
         do{
+            print("trying to save")
             try context.save()
+            print("saved")
         } catch{
             print("core data save error: ")
             print(error)
@@ -77,7 +82,12 @@ class DriversInfoViewController: UIViewController {
     @IBAction func submitButtonPressed(_ sender: UIButton) {
         print("submit")
 //        let newDriver = DriversInfoItem(context: context)
-        let newDriver = NSEntityDescription.insertNewObject(forEntityName: "DriversInfoItem", into: context) as! DriversInfoItem
+        var newDriver:DriversInfoItem
+        if driverInfo.count>0{
+            newDriver=driverInfo[0]
+        }else{
+            newDriver = NSEntityDescription.insertNewObject(forEntityName: "DriversInfoItem", into: context) as! DriversInfoItem
+        }
         newDriver.fullName = fullName.text
         newDriver.phoneNumber = phoneNumber.text
         newDriver.driversLicense = driversLicense.text
