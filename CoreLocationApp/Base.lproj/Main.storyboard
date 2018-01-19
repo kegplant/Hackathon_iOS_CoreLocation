@@ -42,20 +42,42 @@
             </objects>
             <point key="canvasLocation" x="86" y="59"/>
         </scene>
-        <!--View Controller-->
+        <!--Location View Controller-->
         <scene sceneID="y9B-4R-bHX">
             <objects>
-                <viewController id="blp-1X-hZx" sceneMemberID="viewController">
+                <viewController id="blp-1X-hZx" customClass="LocationViewController" customModule="CoreLocationApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wmL-NL-C6n">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dj6-hc-Qkx">
+                                <rect key="frame" x="0.0" y="52" width="375" height="615"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAA-kv-hPQ">
+                                <rect key="frame" x="96" y="10" width="197" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dj6-hc-Qkx" firstAttribute="leading" secondItem="HVS-c7-8UH" secondAttribute="leading" id="06f-x8-Mep"/>
+                            <constraint firstItem="HVS-c7-8UH" firstAttribute="bottom" secondItem="dj6-hc-Qkx" secondAttribute="bottom" id="7LC-u0-R8V"/>
+                            <constraint firstItem="dj6-hc-Qkx" firstAttribute="top" secondItem="HVS-c7-8UH" secondAttribute="top" constant="32" id="WsW-Ir-MGh"/>
+                            <constraint firstItem="HVS-c7-8UH" firstAttribute="trailing" secondItem="dj6-hc-Qkx" secondAttribute="trailing" id="bjF-6v-eeF"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="HVS-c7-8UH"/>
                     </view>
+                    <connections>
+                        <outlet property="labelText" destination="TAA-kv-hPQ" id="w27-fN-V1j"/>
+                        <outlet property="mapView" destination="dj6-hc-Qkx" id="2dw-hZ-iJq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gGq-pg-UTu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1002" y="78"/>
+            <point key="canvasLocation" x="1000.8" y="77.811094452773617"/>
         </scene>
     </scenes>
 </document>
