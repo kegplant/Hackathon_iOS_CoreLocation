@@ -1,7 +1,7 @@
-Report Your Accident
+Report My Accident
 =====================================
 
-Report Your Accident is an iOS app written in Swift 4. 
+Report My Accident is an iOS app written in Swift 4. 
 
 
 Motivation
@@ -15,11 +15,11 @@ Usage
 -----
 
 
-Tap _Take a photo_ to take two photos of the accident, which will be saved in your iOS device's photo library.
-Tap _Log information_ to take down the other driver's information, which will be saved in the app.
-Tap _Pin location_ to drop a pin on the map at your current location, which will be saved in the app. To prevent confusion, you can have one pin at a time.
+Tap [_Take a photo_](https://www.youtube.com/watch?v=0RMdLYmbPhE&feature=youtu.be) to take two photos of the accident, which will be saved in your iOS device's photo library.
+Tap [_Log information_](https://www.youtube.com/watch?v=0RMdLYmbPhE&feature=youtu.be) to take down the other driver's information, which will be saved in the app.
+Tap [_Pin location_](https://www.youtube.com/watch?v=0RMdLYmbPhE&feature=youtu.be) to drop a pin on the map at your current location, which will be saved in the app. To prevent confusion, you can have one pin at a time.
 
-[Youtube demo](https://www.youtube.com/watch?v=0RMdLYmbPhE&feature=youtu.be)
+[_Youtube demo_](https://www.youtube.com/watch?v=0RMdLYmbPhE&feature=youtu.be)
 
 
 
