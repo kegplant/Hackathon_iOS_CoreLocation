@@ -1,13 +1,13 @@
 Report Your Accident
 =====================================
 
-Report Your Accident is an iOS app written in Swift 4 and imagePicker  
+Report Your Accident is an iOS app written in Swift 4. 
 
 
 Motivation
 ----------
 
-Being in a car accident is stressful. This app helps keep track of key information simple UI.
+Being in a car accident can be stressful. This app uses a simple UI to help keep track of key information.
 
 
 
@@ -19,7 +19,7 @@ Tap _Take a photo_ to take two photos of the accident, which will be saved in yo
 Tap _Log information_ to take down the other driver's information, which will be saved in the app.
 Tap _Pin location_ to drop a pin on the map at your current location, which will be saved in the app. To prevent confusion, you can have one pin at a time.
 
-[Youtube demo]()
+[Youtube demo](https://www.youtube.com/watch?v=0RMdLYmbPhE&feature=youtu.be)
 
 
 
